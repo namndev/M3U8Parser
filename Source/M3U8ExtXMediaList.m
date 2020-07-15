@@ -7,6 +7,7 @@
 //
 
 #import "M3U8ExtXMediaList.h"
+#import "M3U8ExtXMedia.h"
 
 @interface M3U8ExtXMediaList ()
 

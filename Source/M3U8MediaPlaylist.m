@@ -12,6 +12,10 @@
 #import "NSURL+m3u8.h"
 #import "M3U8LineReader.h"
 #import "M3U8ExtXKey.h"
+#import "M3U8SegmentInfoList.h"
+#import "M3U8SegmentInfo.h"
+#import "M3U8ExtXMedia.h"
+#import "M3U8ExtXStreamInf.h"
 
 @interface M3U8MediaPlaylist()
 

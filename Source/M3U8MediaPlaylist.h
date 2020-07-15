@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "M3U8SegmentInfoList.h"
+@class M3U8SegmentInfoList;
 
 typedef enum {
     M3U8MediaPlaylistTypeMedia = 0,     // The main media stream playlist.

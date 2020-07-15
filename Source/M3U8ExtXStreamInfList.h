@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "M3U8ExtXStreamInf.h"
+@class M3U8ExtXStreamInf;
 
 @interface M3U8ExtXStreamInfList : NSObject
 

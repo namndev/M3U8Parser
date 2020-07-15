@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "M3U8ExtXMedia.h"
+@class M3U8ExtXMedia;
 
 @interface M3U8ExtXMediaList : NSObject
 

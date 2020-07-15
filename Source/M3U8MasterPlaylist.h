@@ -7,9 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "M3U8ExtXStreamInfList.h"
-#import "M3U8ExtXKey.h"
-#import "M3U8ExtXMediaList.h"
+@class M3U8ExtXStreamInfList;
+@class M3U8ExtXKey;
+@class M3U8ExtXMediaList;
 
 @interface M3U8MasterPlaylist : NSObject
 

@@ -7,6 +7,7 @@
 //
 
 #import "M3U8SegmentInfoList.h"
+#import "M3U8SegmentInfo.h"
 
 @interface M3U8SegmentInfoList ()
 

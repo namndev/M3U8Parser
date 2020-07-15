@@ -9,6 +9,13 @@
 #import "M3U8PlaylistModel.h"
 #import "NSString+m3u8.h"
 #import "NSURL+m3u8.h"
+#import "M3U8SegmentInfo.h"
+#import "M3U8ExtXStreamInf.h"
+#import "M3U8ExtXMedia.h"
+#import "M3U8ExtXStreamInfList.h"
+#import "M3U8MasterPlaylist.h"
+#import "M3U8MediaPlaylist.h"
+#import "M3U8SegmentInfoList.h"
 
 #define INDEX_PLAYLIST_NAME @"index.m3u8"
 

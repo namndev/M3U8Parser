@@ -7,6 +7,7 @@
 //
 
 #import "M3U8ExtXStreamInfList.h"
+#import "M3U8ExtXStreamInf.h"
 
 @interface M3U8ExtXStreamInfList ()
 

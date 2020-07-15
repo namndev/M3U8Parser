@@ -8,6 +8,7 @@
 #import <Foundation/Foundation.h>
 
 @class M3U8PlaylistModel;
+
 @interface NSURL (m3u8)
 
 /**
