@@ -21,8 +21,8 @@ Pod::Spec.new do |spec|
   #                      DESC
 
   spec.homepage = "https://github.com/uizaio/M3U8Parser.git"
-  s.author = { 'Uiza' => 'developer@uiza.io' }
-  s.license = { :type => "BSD", :file => "LICENSE" }
+  spec.author = { 'Uiza' => 'developer@uiza.io' }
+  spec.license = { :type => "BSD", :file => "LICENSE" }
   spec.source = { :git => "https://github.com/uizaio/M3U8Parser.git", :tag => spec.version }
 
   spec.ios.deployment_target = '9.0'
