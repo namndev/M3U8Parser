@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |spec|
   spec.name = "M3U8Parser"
-  spec.version = "0.4.2"
+  spec.version = "1.0.0"
   spec.summary = "A light weight m3u8 parser."
 
 
@@ -21,14 +21,11 @@ Pod::Spec.new do |spec|
   #                      DESC
 
   spec.homepage = "https://github.com/uizaio/M3U8Parser.git"
-  spec.author = { 'Uiza' => 'developer@uiza.io' }
+  spec.author = { 'NamND' => 'namnd.bka@gmail.com' }
   spec.license = { :type => "BSD", :file => "LICENSE" }
-  spec.source = { :git => "https://github.com/uizaio/M3U8Parser.git", :tag => spec.version }
+  spec.source = { :git => "https://github.com/namndev/M3U8Parser.git", :tag => spec.version }
 
   spec.ios.deployment_target = '9.0'
-  spec.osx.deployment_target = '10.10'
-  spec.tvos.deployment_target = '9.0'
-  spec.watchos.deployment_target = '2.0'
   spec.requires_arc = true
 
   spec.source_files = 'Source/*.{h,m}', 'Source/**/*.{h,m}'
