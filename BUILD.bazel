@@ -1,0 +1,56 @@
+load("@rules_cc//cc:defs.bzl", "objc_library")
+
+config_setting(
+    name = "release",
+    values = {
+        "compilation_mode": "opt",
+    },
+)
+
+filegroup(
+    name = "M3U8Kit_hdrs",
+    srcs = ["Source/M3U8Parser.h"],
+    visibility = [
+        "//visibility:public",
+    ],
+)
+
+objc_library(
+    name = "M3U8Kit",
+    srcs = glob(
+        ["Source/*.m", "Source/*.h"],
+        exclude = ["Source/M3U8Parser.h"],
+        exclude_directories = 1,
+    ),
+    hdrs = [
+        ":M3U8Kit_hdrs",
+    ],
+    copts = [
+        "-Wno-everything",
+        "-Wnon-modular-include-in-framework-module",
+        "-stdlib=libc++",
+        "-DCOCOAPODS=1",
+        "-DOBJC_OLD_DISPATCH_PROTOTYPES=0",
+        "-fdiagnostics-show-note-include-stack",
+        "-fno-common",
+        "-fmessage-length=0",
+        "-fpascal-strings",
+        "-fstrict-aliasing",
+        "-Wno-error=nonportable-include-path",
+    ] + select({
+        "//conditions:default": [
+            "-g",
+            "-DPOD_CONFIGURATION_RELEASE=0",
+        ],
+        ":release": [
+            "-DPOD_CONFIGURATION_RELEASE=1",
+            "-DNS_BLOCK_ASSERTIONS=1",
+        ],
+    }) + [
+        "-ISource",
+    ],
+    module_name = "M3U8Kit",
+    enable_modules = 1,
+    includes = ["Source"],
+    visibility = ["//visibility:public"],
+)
