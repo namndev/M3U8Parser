@@ -2,7 +2,6 @@
 
 [![Build Status](https://travis-ci.org/namndev/M3U8Parser.svg?branch=master)](https://travis-ci.org/namndev/M3U8Parser)
 [![CocoaPods Compatible](https://img.shields.io/cocoapods/v/UZM3U8Kit.svg)](https://img.shields.io/cocoapods/v/UZM3U8Kit.svg)
-[![SPM supported](https://img.shields.io/badge/SPM-supported-4BC51D.svg?style=flat)](https://github.com/apple/swift-package-manager)
 ![Platform](https://img.shields.io/cocoapods/p/UZM3U8Kit.svg?style=flat)
 [![MIT license](https://img.shields.io/cocoapods/l/UZM3U8Kit.svg?style=flat)](https://raw.githubusercontent.com/namndev/M3U8Parser/master/LICENSE)
 
