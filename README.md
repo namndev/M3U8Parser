@@ -1,11 +1,10 @@
 # M3U8Kit
 
-[![Build Status](https://travis-ci.org/M3U8Kit/M3U8Parser.svg?branch=master)](https://travis-ci.org/M3U8Kit/M3U8Parser)
-[![CocoaPods Compatible](https://img.shields.io/cocoapods/v/M3U8Kit.svg)](https://img.shields.io/cocoapods/v/M3U8Kit.svg)
-[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
+[![Build Status](https://travis-ci.org/namndev/M3U8Parser.svg?branch=master)](https://travis-ci.org/namndev/M3U8Parser)
+[![CocoaPods Compatible](https://img.shields.io/cocoapods/v/UZM3U8Kit.svg)](https://img.shields.io/cocoapods/v/UZM3U8Kit.svg)
 [![SPM supported](https://img.shields.io/badge/SPM-supported-4BC51D.svg?style=flat)](https://github.com/apple/swift-package-manager)
-![Platform](https://img.shields.io/cocoapods/p/M3U8Kit.svg?style=flat)
-[![MIT license](https://img.shields.io/cocoapods/l/M3U8Kit.svg?style=flat)](https://raw.githubusercontent.com/M3U8Kit/M3U8Parser/master/LICENSE)
+![Platform](https://img.shields.io/cocoapods/p/UZM3U8Kit.svg?style=flat)
+[![MIT license](https://img.shields.io/cocoapods/l/UZM3U8Kit.svg?style=flat)](https://raw.githubusercontent.com/namndev/M3U8Parser/master/LICENSE)
 
 ## TODO
 - [ ] Rewrite with Swift
@@ -16,14 +15,14 @@
 
 ## Installation
 
-### [Cocoapods](https://cocoapods.org/pods/M3U8Kit)
+### [Cocoapods](https://cocoapods.org/pods/UZM3U8Kit)
 
 #### Podfile
 
 Specify it in your Podfile:
 
 ```ruby
-pod 'M3U8Kit'
+pod 'UZM3U8Kit'
 ```
 
 Then, run the following command:
@@ -32,25 +31,9 @@ Then, run the following command:
 $ pod install
 ```
 
-### [SPM ⚠️](https://github.com/apple/swift-package-manager)
-
-Released from [`0.4.1`](https://github.com/M3U8Kit/M3U8Parser/releases/tag/0.4.1)
-
-### [Carthage](https://github.com/Carthage/Carthage)
-
-#### Cartfile
-
-Specify it in your `Cartfile`:
-
-```ogdl
-github "M3U8Kit/M3U8Parser" ~> 0.4.1 
-```
-
-Run `carthage` to build the framework and drag the built `M3U8Kit.framework` into your Xcode project.
-
 ### Manually
 
-If you prefer not to use either of the above mentioned dependency managers, you can integrate `M3U8Kit` into your project manually by adding the files contained in the [Source](https://github.com/M3U8Kit/M3U8Parser/tree/master/Source) folder to your project.
+If you prefer not to use either of the above mentioned dependency managers, you can integrate `M3U8Kit` into your project manually by adding the files contained in the [Source](https://github.com/namndev/M3U8Parser/tree/master/Source) folder to your project.
 
 ## Usage
 
@@ -74,4 +57,4 @@ M3U8PlaylistModel *model = [[M3U8PlaylistModel alloc]
 
 ## License
 
-M3U8Kit is available under the MIT license. See the LICENSE file for more info.
+UZM3U8Kit is available under the MIT license. See the LICENSE file for more info.
