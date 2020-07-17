@@ -27,6 +27,7 @@
 @property (nonatomic, copy) NSURL *originalURL;
 
 @property (nonatomic, strong) NSString *version;
+@property (nonatomic, strong) NSString *uzTimeshift;
 
 @property (nonatomic, strong) M3U8ExtXKey *xSessionKey;
 
@@ -79,7 +80,11 @@
             NSRange r_version = [line rangeOfString:M3U8_EXT_X_VERSION];
             self.version = [line substringFromIndex:r_version.location + r_version.length];
         }
-       
+        // #EXT-X-UZ-TIMESHIFT:extras/master.m3u8
+        else if ([line hasPrefix:M3U8_EXT_X_UZ_TIMESHIFT]) {
+            NSRange r_timeshift = [line rangeOfString:M3U8_EXT_X_UZ_TIMESHIFT];
+            self.uzTimeshift = [line substringFromIndex:r_timeshift.location + r_timeshift.length];
+        }
         else if ([line hasPrefix:M3U8_EXT_X_SESSION_KEY]) {
             NSRange range = [line rangeOfString:M3U8_EXT_X_SESSION_KEY];
             NSString *attribute_list = [line substringFromIndex:range.location + range.length];

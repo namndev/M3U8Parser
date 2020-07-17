@@ -9,7 +9,7 @@
 #import "ILSViewController.h"
 
 //#import "M3U8Kit.h"
-@import M3U8KitDynamic;
+#import "UZM3U8Kit/M3U8Kit.h"
 
 @interface ILSViewController ()
 
@@ -29,14 +29,24 @@
         NSError *error;
         
         //NSURL* url = [[NSBundle main] URLForResource:@"769" withExtension:@"m3u8"];
-        NSURL* url =  [NSURL URLWithString:@"https://hls.ted.com/talks/2639.m3u8?preroll=Thousands"];
+        NSURL* url =  [NSURL URLWithString:@"https://1955897154.rsc.cdn77.org/live/8dee8601-931e-409a-b2e8-aa84761add1e/master.m3u8"];
         M3U8PlaylistModel *model = [[M3U8PlaylistModel alloc] initWithURL:url error:&error];
 
         if (error) {
             NSLog(@"error: %@", error);
         }
         
+        NSLog(@"version %@", model.masterPlaylist.version);
+        
         NSLog(@"Session Key %@", model.masterPlaylist.xSessionKey);
+        
+        NSLog(@"originalURL %@", model.masterPlaylist.originalURL);
+        
+        NSLog(@"baseURL %@", model.masterPlaylist.baseURL);
+        
+        NSLog(@"timeshift %@", model.masterPlaylist.uzTimeshift);
+        
+        NSLog(@"Qualities %lu", (unsigned long)model.masterPlaylist.xStreamList.count);
         
         NSLog(@"segments names: %@", [model segmentNamesForPlaylist:model.audioPl]);
         
@@ -46,7 +56,7 @@
         if (error) {
             NSLog(@"playlists save error: %@", error);
         }
-        
+
         NSTimeInterval end = [NSDate timeIntervalSinceReferenceDate];
         NSLog(@"spend time = %f", end - begin);
         

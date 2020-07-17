@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		011F54FB222F78AA00966918 /* M3U8KitDynamic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 011F54E5222F771C00966918 /* M3U8KitDynamic.framework */; };
+		2340651C24F2A167D0A53454 /* Pods_M3U8KitDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 861E95CAB1ED8909BF2AC3E0 /* Pods_M3U8KitDemo.framework */; };
 		9D1BF81C1906009800E38ABD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D1BF81B1906009800E38ABD /* Foundation.framework */; };
 		9D1BF81E1906009800E38ABD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D1BF81D1906009800E38ABD /* CoreGraphics.framework */; };
 		9D1BF8201906009800E38ABD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D1BF81F1906009800E38ABD /* UIKit.framework */; };
@@ -47,6 +47,7 @@
 
 /* Begin PBXFileReference section */
 		011F54DC222F771C00966918 /* M3U8Kit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = M3U8Kit.xcodeproj; path = ../M3U8Kit.xcodeproj; sourceTree = "<group>"; };
+		861E95CAB1ED8909BF2AC3E0 /* Pods_M3U8KitDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_M3U8KitDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D1BF8181906009800E38ABD /* M3U8KitDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = M3U8KitDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D1BF81B1906009800E38ABD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		9D1BF81D1906009800E38ABD /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -63,6 +64,8 @@
 		9D1BF8341906009800E38ABD /* ILSViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ILSViewController.m; sourceTree = "<group>"; };
 		9D1BF8361906009800E38ABD /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		9D1BF8531906010B00E38ABD /* 769.m3u8 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 769.m3u8; sourceTree = "<group>"; };
+		B65926B395486BE986D72178 /* Pods-M3U8KitDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-M3U8KitDemo.debug.xcconfig"; path = "Target Support Files/Pods-M3U8KitDemo/Pods-M3U8KitDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		E2A2A83F2A74F18ADB03938A /* Pods-M3U8KitDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-M3U8KitDemo.release.xcconfig"; path = "Target Support Files/Pods-M3U8KitDemo/Pods-M3U8KitDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,10 +73,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				011F54FB222F78AA00966918 /* M3U8KitDynamic.framework in Frameworks */,
 				9D1BF81E1906009800E38ABD /* CoreGraphics.framework in Frameworks */,
 				9D1BF8201906009800E38ABD /* UIKit.framework in Frameworks */,
 				9D1BF81C1906009800E38ABD /* Foundation.framework in Frameworks */,
+				2340651C24F2A167D0A53454 /* Pods_M3U8KitDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,6 +93,15 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		26623CEBAF4B728864FA4342 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B65926B395486BE986D72178 /* Pods-M3U8KitDemo.debug.xcconfig */,
+				E2A2A83F2A74F18ADB03938A /* Pods-M3U8KitDemo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		9D1BF80F1906009800E38ABD = {
 			isa = PBXGroup;
 			children = (
@@ -97,6 +109,7 @@
 				9D1BF8211906009800E38ABD /* M3U8KitDemo */,
 				9D1BF81A1906009800E38ABD /* Frameworks */,
 				9D1BF8191906009800E38ABD /* Products */,
+				26623CEBAF4B728864FA4342 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -114,6 +127,7 @@
 				9D1BF81B1906009800E38ABD /* Foundation.framework */,
 				9D1BF81D1906009800E38ABD /* CoreGraphics.framework */,
 				9D1BF81F1906009800E38ABD /* UIKit.framework */,
+				861E95CAB1ED8909BF2AC3E0 /* Pods_M3U8KitDemo.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -152,9 +166,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9D1BF84D1906009800E38ABD /* Build configuration list for PBXNativeTarget "M3U8KitDemo" */;
 			buildPhases = (
+				A32110406847F09BA40E94AF /* [CP] Check Pods Manifest.lock */,
 				9D1BF8141906009800E38ABD /* Sources */,
 				9D1BF8151906009800E38ABD /* Frameworks */,
 				9D1BF8161906009800E38ABD /* Resources */,
+				3914743C4D9C07E86DEDDD95 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -173,9 +189,10 @@
 			attributes = {
 				CLASSPREFIX = ILS;
 				LastUpgradeCheck = 1010;
-				ORGANIZATIONNAME = iLegendsoft;
+				ORGANIZATIONNAME = Uiza;
 				TargetAttributes = {
 					9D1BF8171906009800E38ABD = {
+						DevelopmentTeam = PSUL5WN7UC;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -185,6 +202,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -242,6 +260,49 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3914743C4D9C07E86DEDDD95 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-M3U8KitDemo/Pods-M3U8KitDemo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/UZM3U8Kit/UZM3U8Kit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/UZM3U8Kit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-M3U8KitDemo/Pods-M3U8KitDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A32110406847F09BA40E94AF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-M3U8KitDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9D1BF8141906009800E38ABD /* Sources */ = {
@@ -383,12 +444,13 @@
 		};
 		9D1BF84E1906009800E38ABD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B65926B395486BE986D72178 /* Pods-M3U8KitDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = PSUL5WN7UC;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "M3U8KitDemo/M3U8KitDemo-Prefix.pch";
 				HEADER_SEARCH_PATHS = "";
@@ -403,12 +465,13 @@
 		};
 		9D1BF84F1906009800E38ABD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E2A2A83F2A74F18ADB03938A /* Pods-M3U8KitDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = PSUL5WN7UC;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "M3U8KitDemo/M3U8KitDemo-Prefix.pch";
 				HEADER_SEARCH_PATHS = "";

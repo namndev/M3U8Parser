@@ -1,8 +1,9 @@
 //
 //  M3U8TagsAndAttributes.h
-//  M3U8Kit
+//  UZM3U8Kit
 //
 //  Created by Sun Jin on 3/24/14.
+//  Modifited by NamND
 //  Copyright (c) 2014 Jin Sun. All rights reserved.
 //
 
@@ -248,8 +249,6 @@
 #define M3U8_EXT_X_MAP_URI                  @"URI"  // The value is a quoted-string containing a URI that identifies a resource that contains segment header information.  This attribute is REQUIRED.
 #define M3U8_EXT_X_MAP_BYTERANGE            @"BYTERANGE" // The value is a quoted-string specifying a byte range into the resource identified by the URI attribute.
 
-
-
 /// EXT-X-I-FRAME-STREAM-INF
 /**
  @format    #EXT-X-I-FRAME-STREAM-INF:<attribute-list>
@@ -267,9 +266,6 @@
 #define M3U8_EXT_X_I_FRAME_STREAM_INF_RESOLUTION    @"RESOLUTION" // The value is a decimal-resolution describing the approximate encoded horizontal and vertical resolution of video within the presentation.
 #define M3U8_EXT_X_I_FRAME_STREAM_INF_VIDEO         @"VIDEO" // The value is a quoted-string.
 
-
-
-
 /// EXT-X-START
 /**
  @format    #EXT-X-START:<attribute list>
@@ -279,26 +275,21 @@
 #define M3U8_EXT_X_START_TIME_OFFSET        @"TIME-OFFSET"  // The value of TIME-OFFSET is a decimal-floating-point number of seconds.
 #define M3U8_EXT_X_START_PRECISE            @"PRECISE" // The value is an enumerated-string; valid strings are YES and NO.
 
-
-
-
-
 /**
  @format   #EXT-X-VERSION:<n>   where n is an integer indicating the protocol version.
  */
 #define M3U8_EXT_X_VERSION                  @"#EXT-X-VERSION:"
-
-
-
-
 
 /**
  @format   #EXT-X-SESSION-KEY:<n>   where n is an integer indicating the protocol version.
  */
 #define M3U8_EXT_X_SESSION_KEY                  @"#EXT-X-SESSION-KEY:"
 
-
-
+/**
+ @format    #EXT-X-UZ-TIMESHIFT:<s>    where n is url to extra timeshift
+ @note for Uiza's manifest only
+ */
+#define M3U8_EXT_X_UZ_TIMESHIFT                 @"#EXT-X-UZ-TIMESHIFT:"
 
 
 

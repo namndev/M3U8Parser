@@ -5,7 +5,9 @@
 ## Build generated
 build/
 DerivedData/
-
+Pods/
+Podfile.lock
+*.xcworkspace
 ## Various settings
 *.pbxuser
 !default.pbxuser

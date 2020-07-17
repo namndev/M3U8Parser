@@ -20,7 +20,7 @@ Pod::Spec.new do |spec|
   # spec.description      = <<-DESC
   #                      DESC
 
-  spec.homepage = "https://github.com/uizaio/M3U8Parser.git"
+  spec.homepage = "https://github.com/namndev/M3U8Parser.git"
   spec.author = { 'NamND' => 'namnd.bka@gmail.com' }
   spec.license = { :type => "BSD", :file => "LICENSE" }
   spec.source = { :git => "https://github.com/namndev/M3U8Parser.git", :tag => spec.version }

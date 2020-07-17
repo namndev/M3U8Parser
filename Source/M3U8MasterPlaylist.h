@@ -14,8 +14,10 @@
 @interface M3U8MasterPlaylist : NSObject
 
 @property (nonatomic, strong) NSString *name;
-
+// for #EXT-X-VERSION
 @property (readonly, nonatomic, strong) NSString *version;
+// for #EXT-X-UZ-TIMESHIFT
+@property (readonly, nonatomic, strong) NSString *uzTimeshift;
 
 @property (readonly, nonatomic, copy) NSString *originalText;
 @property (readonly, nonatomic, copy) NSURL *baseURL;
