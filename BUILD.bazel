@@ -8,22 +8,22 @@ config_setting(
 )
 
 filegroup(
-    name = "M3U8Kit_hdrs",
-    srcs = ["Source/M3U8Parser.h"],
+    name = "UZM3U8Kit_hdrs",
+    srcs = ["Source/M3U8Kit.h"],
     visibility = [
         "//visibility:public",
     ],
 )
 
 objc_library(
-    name = "M3U8Kit",
+    name = "UZM3U8Kit",
     srcs = glob(
         ["Source/*.m", "Source/*.h"],
-        exclude = ["Source/M3U8Parser.h"],
+        exclude = ["Source/M3U8Kit.h"],
         exclude_directories = 1,
     ),
     hdrs = [
-        ":M3U8Kit_hdrs",
+        ":UZM3U8Kit_hdrs",
     ],
     copts = [
         "-Wno-everything",
@@ -49,7 +49,7 @@ objc_library(
     }) + [
         "-ISource",
     ],
-    module_name = "M3U8Kit",
+    module_name = "UZM3U8Kit",
     enable_modules = 1,
     includes = ["Source"],
     visibility = ["//visibility:public"],
