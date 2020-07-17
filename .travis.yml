@@ -1,19 +1,19 @@
 language: objective-c
-xcode_project: M3U8Kit.xcodeproj
+xcode_project: M3U8KitDemo.xcodeproj
 # xcode_workspace: <WORKSPACE_PLACEHOLDER>
-xcode_scheme: M3U8Kit
+xcode_scheme: M3U8KitDemo
 
 env:
   global:
-    - FRAMEWORK_NAME=M3U8Kit
+    - FRAMEWORK_NAME=M3U8KitDemo
 before_install:
   - gem install xcpretty
   
 script:
-  - xcodebuild -project $FRAMEWORK_NAME.xcodeproj -scheme $FRAMEWORK_NAME build | xcpretty
+  - travis_wait 30 pod install
+  - xcodebuild clean build -sdk iphonesimulator -workspace $FRAMEWORK_NAME.xcworkspace -scheme $FRAMEWORK_NAME CODE_SIGNING_REQUIRED=NO | xcpretty
+#  - xcodebuild -project $FRAMEWORK_NAME.xcodeproj -scheme $FRAMEWORK_NAME build | xcpretty
   - pod lib lint
-
-  - carthage build --no-skip-current
 
 notifications:
   email: false
